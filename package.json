@@ -1,0 +1,25 @@
+{
+  "name": "rehype-laserbeam",
+  "version": "0.1.0",
+  "repository": "marekweb/rehype-laserbeam",
+  "license": "MIT",
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint **/*.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "hast-util-classnames": "^1.0.1",
+    "hast-util-to-string": "^1.0.3",
+    "laserbeam": "^0.1.0",
+    "lodash.get": "^4.4.2",
+    "unist-util-visit": "^2.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "hastscript": "^5.1.2",
+    "jest": "^25.3.0",
+    "prettier": "^2.0.4",
+    "unified": "^9.0.0"
+  }
+}
