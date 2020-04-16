@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "repository": "marekweb/rehype-laserbeam",
   "license": "MIT",
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "format": "prettier --write .",
     "lint": "eslint **/*.js",
@@ -11,7 +14,7 @@
   "dependencies": {
     "hast-util-classnames": "^1.0.1",
     "hast-util-to-string": "^1.0.3",
-    "laserbeam": "^0.1.0",
+    "laserbeam": "^0.2.0",
     "lodash.get": "^4.4.2",
     "unist-util-visit": "^2.0.2"
   },
