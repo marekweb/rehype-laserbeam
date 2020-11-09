@@ -10,6 +10,7 @@ const defaultOptions = {
 
 function rehypeLaserbeam(options = {}) {
   return (tree, file) => {
+    // Accept an "options function" which is expected to return an options object.
     if (typeof options === "function") {
       const processor = this;
       options = options.call({ processor, file, tree });
@@ -25,7 +26,7 @@ function rehypeLaserbeam(options = {}) {
         return;
       }
 
-      transformCodeElement(node);
+      transformCodeElement(node, options.laserbeamOptions);
       hastUtilClassnames(parent, "t-code");
       if (options.removeLanguageJsClassName) {
         hastUtilClassnames(node, { "language-js": false });
@@ -34,9 +35,9 @@ function rehypeLaserbeam(options = {}) {
   };
 }
 
-function transformCodeElement(node) {
+function transformCodeElement(node, laserbeamOptions) {
   const contents = hastUtilToString(node);
-  const nodes = laserbeam.transform(contents);
+  const nodes = laserbeam.transform(contents, laserbeamOptions);
   node.children = nodes;
 }
 
