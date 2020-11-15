@@ -14,7 +14,7 @@
   "dependencies": {
     "hast-util-classnames": "^1.0.2",
     "hast-util-to-string": "^1.0.4",
-    "laserbeam": "^0.2.1",
+    "laserbeam": "^0.3.0",
     "lodash.get": "^4.4.2",
     "unist-util-visit": "^2.0.3"
   },

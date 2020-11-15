@@ -29,7 +29,6 @@ test("it finds and highlights a code block in html", async () => {
         h("span.t-token.t-whitespace", { dataType: "whitespace" }, " "),
         h("span.t-token.t-string", { dataType: "string" }, '"alpha"'),
         h("span.t-token.t-punctuation", { dataType: "punctuation" }, ";"),
-        h("span.t-token.t-eof", { dataType: "eof" }, ""),
       ])
     )
   );
